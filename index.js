@@ -13,7 +13,7 @@ const PORT = 33061;
 app.use (express.json());
 app.use (router); 
 
-app.lister(PORT, () => {
+app.listen(PORT, () => {
     console.log (`Kings of Wayco port ${PORT}`); 
 db.authenticate().them(() => {
     console.log('Login DataBase')
