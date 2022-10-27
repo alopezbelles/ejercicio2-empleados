@@ -4,16 +4,14 @@ const sequelize = require('../db/db')
 class Departamento extends Model {}
 
 Departamento.init({
-    DNI: {
-        type: DataTypes.STRING,
+    id_departamento: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
-        validate: {
-            len: [9, 9]
-        }
+        autoIncrement: true
     },
     nombre: DataTypes.STRING,
-    apellidos: DataTypes.STRING,
+    presupuesto: DataTypes.INTEGER
 },
 {
     sequelize,
