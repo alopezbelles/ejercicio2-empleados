@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const DepartamentosRoutes = require('./views/DepartametosRoutes')
+const DepartamentosRoutes = require('./views/DepartamentosRoutes')
 const EmpleadosRoutes = require('./views/EmpleadosRoutes')
 
 
